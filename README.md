@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://github.com/bahmanDev/message-sending-system" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/sms-text-message-icon-0.png" width="150" alt="sms Text Message icon" /></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -9,9 +9,33 @@
 
 ## About Message sending system
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Message sending service in 2 normal message sending methods and template method, this service is implemented by 2 web services Kasadek and Kavenagar.
+You can also switch between these 2 web services by changing the provider in the env file
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
+To call this service, you can call the Sms facade method and use the send and verify methods
+
+## Steps
+```text
+sudo docker-compose up -d
+```
+```text
+composer install
+```
+Serve [http://localhost:9000](http://localhost:9000)
+```php
+\App\Facades\Sms::send(09121234567, 'Write something');
+
+//or
+
+\App\Facades\Sms::verify(09121234567, 'template_name', 21322)
+```
+
+## Test method with command
+You can choose which service you want to test
+```php
+php artisan message:send
+```
+
 
 
 ## License
