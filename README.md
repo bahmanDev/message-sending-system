@@ -22,6 +22,8 @@ sudo docker-compose up -d
 composer install
 ```
 Serve [http://localhost:9000](http://localhost:9000)
+
+## Methods use
 ```php
 \App\Facades\Sms::send(09121234567, 'Write something');
 
