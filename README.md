@@ -21,6 +21,18 @@ sudo docker-compose up -d
 ```text
 composer install
 ```
+
+Set the .env file
+```dotenv
+SMS_PROVIDER=ghasedak
+
+KAVE_NEGAR_SENDER=
+KAVE_NEGAR_API_KEY=
+
+GHASEDAK_SENDER=
+GHASEDAK_API_KEY=
+
+```
 Serve [http://localhost:9000](http://localhost:9000)
 
 ## Methods use
