@@ -9,7 +9,7 @@
 
 ## About Message sending system
 
-Message sending service in 2 normal message sending methods and template method, this service is implemented by 2 web services Kasadek and Kavenagar.
+Message sending service in 2 normal message sending methods and template method, this service is implemented by 2 web services Ghasedak and Kavenagar.
 You can also switch between these 2 web services by changing the provider in the env file
 
 To call this service, you can call the Sms facade method and use the send and verify methods
